@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Modern software solutions for kiosks, temples, and non‑profit organizations — simple, secure, and built to scale.">
+<meta property="og:title" content="Sahasra Solutions — Kiosks • Temples • Non‑profits">
+<meta property="og:description" content="Modern software solutions for kiosks, temples, and non‑profit organizations — simple, secure, and built to scale.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/og.svg">
+<meta name="theme-color" content="#070c16">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+
+<title>Pricing — Sahasra Solutions</title>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 12a8 8 0 1016 0 8 8 0 10-16 0z" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>Sahasra Solutions</span>
+    </a>
+    <div class="menu">
+      <a data-nav="solutions" href="/solutions.html">Solutions</a>
+      <a data-nav="features" href="/features.html">Features</a>
+      <a data-nav="pricing" href="/pricing.html">Pricing</a>
+      <a data-nav="case" href="/case-studies.html">Case Studies</a>
+      <a data-nav="about" href="/about.html">About</a>
+      <a data-nav="contact" class="btn" href="/contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<script>
+(function(){
+  const map={
+    "solutions":"/solutions.html","features":"/features.html","pricing":"/pricing.html",
+    "case":"/case-studies.html","about":"/about.html","contact":"/contact.html","home":"/"
+  };
+  const path=location.pathname.replace(/\/index\.html?$/,'/');
+  document.querySelectorAll('[data-nav]').forEach(a=>{ if(map[a.dataset.nav]===path) a.classList.add('active'); });
+})();
+</script>
+
+<main class="container">
+  <section class="hero">
+    <span class="badge">Pricing</span>
+    <h1>Simple plans</h1>
+    <p class="lead">Start small and scale as your community grows.</p>
+  </section>
+  <section class="section pricing">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <p class="price">$300<span class="small">/mo</span></p>
+      <p class="small">Read‑only site, basic analytics, email support</p>
+    </div>
+    <div class="price-card">
+      <h3>Community</h3>
+      <p class="price">$450<span class="small">/mo</span></p>
+      <p class="small">Donations, events, bulk email, 1 kiosk</p>
+    </div>
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <p class="price">Custom</p>
+      <p class="small">Multi‑site, SSO, SLAs, advanced integrations</p>
+    </div>
+  </section>
+  <footer>© 2025 Sahasra Solutions</footer>
+</main>
+</body>
+</html>

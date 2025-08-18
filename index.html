@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Modern software solutions for kiosks, temples, and non‑profit organizations — simple, secure, and built to scale.">
+<meta property="og:title" content="Sahasra Solutions — Kiosks • Temples • Non‑profits">
+<meta property="og:description" content="Modern software solutions for kiosks, temples, and non‑profit organizations — simple, secure, and built to scale.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/og.svg">
+<meta name="theme-color" content="#070c16">
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/styles.css">
+
+<title>Sahasra Solutions — Kiosks • Temples • Non‑profits</title>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <div class="inner">
+    <a class="brand" href="/"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 12a8 8 0 1016 0 8 8 0 10-16 0z" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="1.5"/></svg>
+      <span>Sahasra Solutions</span>
+    </a>
+    <div class="menu">
+      <a data-nav="solutions" href="/solutions.html">Solutions</a>
+      <a data-nav="features" href="/features.html">Features</a>
+      <a data-nav="pricing" href="/pricing.html">Pricing</a>
+      <a data-nav="case" href="/case-studies.html">Case Studies</a>
+      <a data-nav="about" href="/about.html">About</a>
+      <a data-nav="contact" class="btn" href="/contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<script>
+(function(){
+  const map={
+    "solutions":"/solutions.html","features":"/features.html","pricing":"/pricing.html",
+    "case":"/case-studies.html","about":"/about.html","contact":"/contact.html","home":"/"
+  };
+  const path=location.pathname.replace(/\/index\.html?$/,'/');
+  document.querySelectorAll('[data-nav]').forEach(a=>{ if(map[a.dataset.nav]===path) a.classList.add('active'); });
+})();
+</script>
+
+<main class="container">
+  <section class="hero">
+    <span class="badge">Software that serves communities</span>
+    <h1>Sahasra Solutions</h1>
+    <p class="lead">Modern software solutions for kiosks, temples, and non‑profit organizations — simple, secure, and built to scale.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn" href="/solutions.html">Explore Solutions</a>
+      <a class="btn" href="/contact.html">Talk to us</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="grid">
+      <article class="card">
+        <h3>Kiosk Platforms</h3>
+        <p>Self‑service check‑in, donations, and ticketing with offline‑first support, receipt printing, and tap‑to‑pay.</p>
+      </article>
+      <article class="card">
+        <h3>Temple Systems</h3>
+        <p>Pooja bookings, prasadam & ticketing, volunteer rosters, donor CRM, and multilingual receipts.</p>
+      </article>
+      <article class="card">
+        <h3>Non‑profit Suite</h3>
+        <p>Donor management, campaigns, email & SMS, pledge schedules, and event registrations.</p>
+      </article>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Built for reliability</h2>
+    <blockquote>We design for low‑friction operations in high‑traffic environments — simple for staff, delightful for patrons.</blockquote>
+  </section>
+  <footer>© 2025 Sahasra Solutions • Built 2025-08-18T03:21:14Z</footer>
+</main>
+</body>
+</html>
